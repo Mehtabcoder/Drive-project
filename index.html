@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Car Rental Form</title>
+  <title>Car Booking</title>
 </head>
 <body>
-  <h2>Rent a Car</h2>
+  <h2>Book a Car</h2>
   <form id="bookingForm">
     <input type="text" id="name" placeholder="Your Name" required><br>
     <input type="tel" id="phone" placeholder="Phone Number" required><br>
@@ -23,9 +23,10 @@
       const pickupDate = document.getElementById("pickupDate").value;
 
       const message = `New Car Booking:%0AName: ${name}%0APhone: ${phone}%0ACar Type: ${carType}%0APickup Date: ${pickupDate}`;
-      
-      // Replace YOURNUMBER with your WhatsApp number with country code (e.g., 919999999999)
-      window.open(`https://wa.me/8556880297?text=${message}`, '_blank');
+
+      const phoneNumber = '8556880297'; // Your WhatsApp number
+
+      window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`, '_blank');
     });
   </script>
 </body>
