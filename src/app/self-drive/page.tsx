@@ -69,7 +69,7 @@ export default function LuxuryWedding() {
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               <div className="relative bg-white p-4 rounded-2xl shadow-2xl">
                 <Image
-                  src="/cars/Self-drive/car1.png"
+                  src="/cars/self-drive/car1.png"
                   width={800}
                   height={500}
                   alt="Audi A3 Cabriolet - Luxury Wedding Car"
