@@ -4,6 +4,9 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import Image from 'next/image';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,6 +40,26 @@ export default function Home() {
 
   return (
     <main className="bg-white text-[#0e141b] min-h-screen">
+  <div className="bg-gradient-to-r from-orange-500 via-rose-500 to-red-500 text-white text-sm px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2 shadow-md">
+  {/* Phone */}
+  <div className="flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M21 16.5V21a1 1 0 0 1-1.25.97A19.8 19.8 0 0 1 3 4.25 1 1 0 0 1 3.97 3h4.5a1 1 0 0 1 1 0.75l1.1 4.4a1 1 0 0 1-.29.96l-2.2 2.2a16 16 0 0 0 6.4 6.4l2.2-2.2a1 1 0 0 1 .96-.29l4.4 1.1a1 1 0 0 1 .75 1z"/>
+    </svg>
+    <span className="font-semibold">+91 83272 72222</span>
+  </div>
+
+  {/* Email */}
+  <div className="flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.01l-10 6.25L2 4.01V4zm0 2.26V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.26l-10 6.24L2 6.26z"/>
+    </svg>
+    <span className="font-semibold">info@punjabcarrentals.com</span>
+  </div>
+</div>
+
+
+  
       {/* Header with Mobile Menu */}
       <header className="relative">
         {/* Desktop Navigation */}
@@ -53,11 +76,12 @@ export default function Home() {
               Punjab Rental Wheels
             </div>
           </div>
+        
           
           {/* Luxury Three Dot Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative flex flex-col gap-1.5 p-3 rounded-full hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 transform hover:scale-110 group"
+            className="relative flex flex-col gap-1.5 p-3 rounded-full hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 transform hover:scale-100 group"
             aria-label="Toggle menu"
           >
             <div className={`w-1.5 h-1.5 rounded-full transition-all duration-500 transform ${
@@ -180,6 +204,78 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+<div className="relative h-[40vh] sm:h-[40vh] md:h-[40vh] overflow-hidden straight-b-3xl shadow-lg">
+  <Carousel
+    autoPlay
+    infiniteLoop
+    interval={3500}
+    showThumbs={false}
+    showStatus={false}
+    showArrows={false}
+    swipeable
+    emulateTouch
+    className="h-full"
+  >
+    {[
+      "/cars/self-drive/car1.png",
+      "/cars/taxi/car1.png",
+      "/cars/tourist-package/car1.png",
+    ].map((src, i) => (
+      <div
+        key={src}
+        className="relative w-full h-[65vh] sm:h-[70vh] md:h-[80vh]"
+      >
+        <Image
+          src={src}
+          alt={`Wedding Car ${i + 1}`}
+          fill
+          style={{ objectFit: "cover" }}
+          className="w-full h-full object-cover"
+          priority={i === 0}
+        />
+      </div>
+    ))}
+  </Carousel>
+
+  {/* Overlay Content */}
+  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-black/60 via-black/30 to-black/60 px-4">
+    <div className="w-full max-w-2xl text-center text-white border-t border-b border-white/30 py-6 sm:py-10">
+      <h1 className="text-3xl sm:text-5xl font-extrabold mb-2 drop-shadow-lg tracking-tight">
+        
+      </h1>
+      <h2 className="text-base sm:text-2xl font-semibold mb-4 drop-shadow-md">
+        CAR RENTALS
+      </h2>
+      <p className="text-sm sm:text-base mb-6 font-medium drop-shadow">
+        Whether it’s a wedding, function, or an occasion, our fleet of luxury cars will be at your service.
+      </p>
+      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5">
+       <div className="flex space-x-4 justify-center">
+<div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 items-center justify-center">
+  <a
+    href="/luxury-wedding"
+    className="bg-gradient-to-r from-red-500 to-red-600 px-4 py-1 text-sm font-semibold shadow-md hover:from-red-600 hover:to-rose-500 transition straight text-center"
+  >
+    Hire Car
+  </a>
+  <a
+    href="/About"
+    className="bg-gradient-to-r from-orange-500 to-yellow-500 px-4 py-1 text-sm font-semibold shadow-md hover:from-yellow-500 hover:to-orange-500 transition straight text-center"
+  >
+    About
+  </a>
+</div>
+
+
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
 
       {/* Hero */}
       <section className="text-center px-6 py-12">
