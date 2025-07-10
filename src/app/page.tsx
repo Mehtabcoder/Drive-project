@@ -306,15 +306,66 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center text-gray-500 py-6 text-sm border-t">
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-6 mb-4">
+      <footer className="bg-[#0a1d37] text-white pt-10 pb-6 px-4 sm:px-10 mt-10">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    {/* Logo & About */}
+    <div>
+      <h2 className="text-2xl font-bold text-orange-400 mb-2">Punjab Rental Wheels</h2>
+      <p className="text-sm text-gray-300">
+        Premium Self-Drive & Luxury Car Rentals in Punjab. 
+        Hire with chauffeur or self-drive – flexible, fast, and reliable.
+      </p>
+      <div className="flex mt-4 gap-3">
+        <a href="#" className="text-orange-400 hover:text-white"><i className="fab fa-facebook-f"></i></a>
+        <a href="#" className="text-orange-400 hover:text-white"><i className="fab fa-instagram"></i></a>
+        <a href="#" className="text-orange-400 hover:text-white"><i className="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
 
-          <Link href="/">Home</Link>
-          <Link href="/About">About</Link>
-          
-        </div>
-        <p>© 2024 DriveNow. All rights reserved.</p>
-      </footer>
+    {/* Quick Links */}
+    <div>
+      <h3 className="font-semibold text-lg mb-2 text-white">Quick Links</h3>
+      <ul className="space-y-2 text-sm text-gray-300">
+        <li><a href="/">Home</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="/self-drive">Self Drive</a></li>
+        <li><a href="/luxury-wedding">Luxury Cars</a></li>
+        
+      </ul>
+    </div>
+
+    {/* Services */}
+    <div>
+      <h3 className="font-semibold text-lg mb-2 text-white">Our Services</h3>
+      <ul className="space-y-2 text-sm text-gray-300">
+        <li>Self Drive Car Rental</li>
+        <li>Wedding Luxury Cars</li>
+        <li>Airport Pickup/Drop</li>
+        <li>Chauffeur Cars</li>
+      </ul>
+    </div>
+
+    {/* Contact */}
+    <div>
+      <h3 className="font-semibold text-lg mb-2 text-white">Contact</h3>
+      <ul className="space-y-2 text-sm text-gray-300">
+        <li><i className="fas fa-map-marker-alt text-orange-400 mr-2"></i> Ludhiana, Punjab</li>
+        <li><i className="fas fa-envelope text-orange-400 mr-2"></i> info@punjabcarrentals.com</li>
+        <li><i className="fas fa-phone text-orange-400 mr-2"></i> +91 83272 72222</li>
+      </ul>
+    </div>
+
+  </div>
+  </footer>
+
+  {/* Bottom Bar */}
+  <div className="bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 text-white text-sm px-10 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 shadow-md">
+    © {new Date().getFullYear()} Punjab Rental Wheels | All Rights Reserved
+  </div>
+
+
+      
     </main>
   );
 }

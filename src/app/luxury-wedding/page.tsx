@@ -34,7 +34,8 @@ export default function LuxuryWedding() {
   return (
     <main className="bg-gradient-to-br from-slate-50 to-gray-100 min-h-screen">
       {/* Luxury Header */}
-      <div className="bg-gradient-to-r from-amber-800 via-yellow-600 to-amber-800 text-white py-4 px-6 shadow-xl">
+      <div className="bg-gradient-to-r from-orange-700 via-red-500 to-yellow-500 text-white py-4 px-6 shadow-xl">
+
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -57,8 +58,7 @@ export default function LuxuryWedding() {
           <span className="hover:text-amber-600 cursor-pointer">Home</span>
           <span className="mx-2">→</span>
           <span className="hover:text-amber-600 cursor-pointer">Luxury Wedding Cars</span>
-          <span className="mx-2">→</span>
-          <span className="text-amber-700 font-medium">Audi</span>
+          
         </nav>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -245,7 +245,7 @@ export default function LuxuryWedding() {
   </div>
 
   {/* Contact Info */}
-  <div className="bg-gradient-to-r from-amber-600 to-yellow-600 rounded-2xl p-8 text-white">
+  <div className="bg-gradient-to-r from-orange-700 via-red-500 to-yellow-500 text-white py-4 px-6 shadow-xl">
     <h3 className="text-xl font-bold mb-4">Need Assistance?</h3>
     <div className="space-y-3">
       <div className="flex items-center space-x-3">
