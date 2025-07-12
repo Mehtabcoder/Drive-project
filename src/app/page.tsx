@@ -66,6 +66,9 @@ export default function Home() {
         <nav className="hidden md:flex justify-center gap-8 py-4 border-b bg-gradient-to-r from-white to-gray-50">
           <Link href="/" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Home</Link>
           <Link href="/about" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">About</Link>
+          <Link href="/self-drive" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Self-Drive</Link>
+          <Link href="/luxury-wedding" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Luxury Wedding</Link>
+          <Link href="/taxi" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Taxi Booking</Link>
           <Link href="/contact" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-pink-600 hover:to-red-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Contact</Link>
         </nav>
 
@@ -304,6 +307,69 @@ export default function Home() {
           </Link>
         ))}
       </section>
+
+      <section className="py-16 bg-gray-50 px-6 sm:px-10">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-sm text-orange-600 font-semibold uppercase tracking-wide mb-3">
+      Why Choose Us
+    </h2>
+    <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">
+      We Have 39 Years Of <br />Experience in the Travel Industry
+    </h3>
+    <p className="text-gray-700 mb-12 text-lg sm:text-xl">
+      For a comfortable ride & to enjoy the best of travel & leisure services, ride with Ranjit Bros Taxi Service:
+      The one-stop travel shop.
+    </p>
+
+    <div className="space-y-10 sm:space-y-12">
+      {/* 1 - Govt Approved */}
+      <div className="flex items-start gap-6 hover:bg-gray-100 p-4 rounded-lg transition duration-300 ease-in-out">
+        <div className="text-red-600 text-4xl sm:text-5xl transform transition-transform duration-300 ease-in-out hover:scale-110">
+          📍
+        </div>
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900 mb-2">
+            Govt. Approved
+          </h4>
+          <p className="text-gray-700">
+            Certified by India's Ministry of Tourism, Punjab Tourism, and Incredible India. The only govt. approved car rental company in Punjab.
+          </p>
+        </div>
+      </div>
+
+      {/* 2 - Safe & Secure */}
+      <div className="flex items-start gap-6 hover:bg-gray-100 p-4 rounded-lg transition duration-300 ease-in-out">
+        <div className="text-red-600 text-4xl sm:text-5xl transform transition-transform duration-300 ease-in-out hover:scale-110">
+          🛡️
+        </div>
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900 mb-2">
+            Safe & Secure
+          </h4>
+          <p className="text-gray-700">
+            Punjab Car Rentals provides secure online bookings for luxury, self-drive, and chauffeur-driven vehicles.
+          </p>
+        </div>
+      </div>
+
+      {/* 3 - Customer Support */}
+      <div className="flex items-start gap-6 hover:bg-gray-100 p-4 rounded-lg transition duration-300 ease-in-out">
+        <div className="text-red-600 text-4xl sm:text-5xl transform transition-transform duration-300 ease-in-out hover:scale-110">
+          💬
+        </div>
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900 mb-2">
+            Customer Support
+          </h4>
+          <p className="text-gray-700">
+            Our service is available 24x7, all year round, with dedicated support for every customer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="bg-[#0a1d37] text-white pt-10 pb-6 px-4 sm:px-10 mt-10">

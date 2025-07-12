@@ -50,6 +50,7 @@ export default function LuxuryWedding() {
           </div>
         </div>
       </div>
+      
 
       <div className="max-w-6xl mx-auto px-6 py-8">
         {/* Breadcrumb */}
@@ -80,70 +81,37 @@ export default function LuxuryWedding() {
             </div>
 
             {/* Vehicle Details */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-                <Car className="w-8 h-8 text-amber-600 mr-3" />
-                Lambo
-              </h2>
-              
-              <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Experience the epitome of luxury with our Lambo for your special day. This stunning convertible combines elegance, performance, and sophistication to make your day truly unforgettable.
-              </p>
+           <section className="px-4 sm:px-8 md:px-16 py-10 text-gray-800">
+  <h2 className="text-2xl md:text-3xl font-bold mb-2 border-b-4 border-red-600 inline-block">
+    Maruti Grand Vitara Smart Hybrid Alpha Ptl
+  </h2>
 
-              {/* Features Grid */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="flex items-start space-x-3">
-                  <div className="bg-amber-100 p-2 rounded-lg">
-                    <Crown className="w-5 h-5 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800">Premium </h3>
-                    <p className="text-sm text-gray-600">Elegant </p>
-                  </div>
-                </div>
+  <p className="mt-4 text-base leading-relaxed">
+    Punjab Car Rentals offers a self-drive car that has never been easier! With affordable rates and flexible rental options, you can book the Maruti Grand Vitara Smart Hybrid Alpha Ptl for your next trip to Punjab or nearby cities like Himachal, Ladakh, and Spiti. So why wait? Book now and experience the ultimate comfort and performance of this amazing SUV!
+  </p>
 
-                <div className="flex items-start space-x-3">
-                  <div className="bg-amber-100 p-2 rounded-lg">
-                    <Users className="w-5 h-5 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800">Professional </h3>
-                    <p className="text-sm text-gray-600">Experienced as you liker</p>
-                  </div>
-                </div>
+  <p className="mt-4 text-base leading-relaxed">
+    If you're planning a trip and looking for a comfortable and stylish self-drive car, the Maruti Grand Vitara Smart Hybrid Alpha Ptl is a great option. You can rent this car at very reasonable rates from self-drive car rental services in Punjab and nearby cities, offering you a convenient and affordable way to explore your destination.
+  </p>
 
-                <div className="flex items-start space-x-3">
-                  <div className="bg-amber-100 p-2 rounded-lg">
-                    <Clock className="w-5 h-5 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800">Flexible Packages</h3>
-                    <p className="text-sm text-gray-600">Up to 8 hours or 80 km coverage</p>
-                  </div>
-                </div>
+  <h3 className="text-xl md:text-2xl font-semibold mt-8 mb-4 text-center">
+    Key Specifications of Maruti Grand Vitara Smart Hybrid Alpha AT Ptl
+  </h3>
 
-                <div className="flex items-start space-x-3">
-                  <div className="bg-amber-100 p-2 rounded-lg">
-                    <Shield className="w-5 h-5 text-amber-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800">Full Insurance</h3>
-                    <p className="text-sm text-gray-600">Comprehensive coverage included</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Rating */}
-              <div className="flex items-center mt-8 pt-6 border-t border-gray-200">
-                <div className="flex items-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <span className="ml-3 text-gray-600">4.9/5 from 150+ happy couples</span>
-              </div>
-            </div>
-          </div>
+  <ul className="text-center text-sm sm:text-base space-y-2 font-medium">
+    <li><span className="font-bold">Engine:</span> 1.5-liter Smart Hybrid Petrol Engine</li>
+    <li><span className="font-bold">Transmission:</span> 4-speed Automatic Transmission</li>
+    <li><span className="font-bold">Maximum Power Output:</span> 103 kW at 6,000 rpm</li>
+    <li><span className="font-bold">Maximum Torque Output:</span> 138 Nm at 4,400 rpm</li>
+    <li><span className="font-bold">Fuel Tank Capacity:</span> 47 liters</li>
+    <li><span className="font-bold">Seating Capacity:</span> 5 passengers</li>
+    <li><span className="font-bold">Boot Space:</span> 375 liters</li>
+    <li><span className="font-bold">Ground Clearance:</span> 200 mm</li>
+    <li><span className="font-bold">Suspension:</span> Front - MacPherson Strut with Coil Spring, Rear - Torsion Beam with Coil Spring</li>
+    <li><span className="font-bold">Brakes:</span> Front - Disc, Rear - Drum</li>
+  </ul>
+</section>
+</div>
 
           {/* Right Column - Booking Form */}
 <div className="space-y-8">
@@ -165,7 +133,8 @@ export default function LuxuryWedding() {
             onChange={handleInputChange}
             placeholder="Your Name"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+           className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+
           />
         </div>
 
@@ -178,7 +147,7 @@ export default function LuxuryWedding() {
             onChange={handleInputChange}
             placeholder="+91 XXXXX XXXXX"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
           />
         </div>
       </div>
@@ -191,7 +160,7 @@ export default function LuxuryWedding() {
           value={formData.email}
           onChange={handleInputChange}
           placeholder="your.email@example.com"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
         />
       </div>
 
@@ -202,7 +171,8 @@ export default function LuxuryWedding() {
           name="date"
           value={formData.date}
           onChange={handleInputChange}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+         className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+
         />
       </div>
 
@@ -214,7 +184,7 @@ export default function LuxuryWedding() {
           onChange={handleInputChange}
           rows={4}
           placeholder="Any specific decoration preferences, pickup location, or special requests..."
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors resize-none"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
         />
       </div>
 
