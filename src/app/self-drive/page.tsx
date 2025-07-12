@@ -228,7 +228,7 @@ export default function LuxuryWedding() {
       </div>
       <div className="flex items-center space-x-3">
         <MapPin className="w-5 h-5" />
-        <span>Available across major cities</span>
+        <span>Available across any city in punjab</span>
       </div>
     </div>
   </div>
