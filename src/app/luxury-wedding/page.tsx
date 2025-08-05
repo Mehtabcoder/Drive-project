@@ -41,7 +41,7 @@ export default function LuxuryWedding() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Crown className="w-8 h-8 text-yellow-200" />
-              <h1 className="text-2xl font-bold tracking-wide">Punjab Rental Wheel</h1>
+              <h1 className="text-2xl font-bold tracking-wide">Rent2GO</h1>
             </div>
             <div className="flex items-center space-x-4 text-sm">
               <div className="flex items-center space-x-1">

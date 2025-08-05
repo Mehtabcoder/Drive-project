@@ -384,7 +384,7 @@ export default function Home() {
       <h2 className="text-2xl font-bold text-orange-400 mb-2">Rent2GO</h2>
       <p className="text-sm text-gray-300">
         Premium Self-Drive & Luxury Car Rentals in Punjab. 
-        Hire with chauffeur or self-drive – flexible, fast, and reliable.
+        Hire with chauffeur or self-drive – flexible, fast, and reliable.cd
       </p>
       <div className="flex mt-4 gap-3">
         <a href="#" className="text-orange-400 hover:text-white"><i className="fab fa-facebook-f"></i></a>

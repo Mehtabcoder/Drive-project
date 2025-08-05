@@ -39,7 +39,7 @@ export default function LuxuryWedding() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Crown className="w-8 h-8 text-yellow-200" />
-              <h1 className="text-2xl font-bold tracking-wide">Punjab Rental Wheel</h1>
+              <h1 className="text-2xl font-bold tracking-wide">Rent2GO</h1>
             </div>
             <div className="flex items-center space-x-4 text-sm">
               <div className="flex items-center space-x-1">
@@ -83,7 +83,7 @@ export default function LuxuryWedding() {
             {/* Vehicle Details */}
            <section className="px-4 sm:px-8 md:px-16 py-10 text-gray-800">
   <h2 className="text-2xl md:text-3xl font-bold mb-2 border-b-4 border-red-600 inline-block">
-    Scorpio
+    Mahindra Scorpio
   </h2>
 
   <p className="mt-4 text-base leading-relaxed">
@@ -99,12 +99,11 @@ export default function LuxuryWedding() {
   </h3>
 
   <ul className="text-center text-sm sm:text-base space-y-2 font-medium">
-    <li><span className="font-bold">Engine:</span> 1.5-liter Smart Hybrid Petrol Engine</li>
-    <li><span className="font-bold">Transmission:</span> 4-speed Automatic Transmission</li>
+    <li><span className="font-bold">Car Name:</span> Mahindra Scorpio</li>
     <li><span className="font-bold">Maximum Power Output:</span> 103 kW at 6,000 rpm</li>
     <li><span className="font-bold">Maximum Torque Output:</span> 138 Nm at 4,400 rpm</li>
     <li><span className="font-bold">Fuel Tank Capacity:</span> 47 liters</li>
-    <li><span className="font-bold">Seating Capacity:</span> 5 passengers</li>
+    <li><span className="font-bold">Seating Capacity:</span> 6 passengers</li>
     <li><span className="font-bold">Boot Space:</span> 375 liters</li>
     <li><span className="font-bold">Ground Clearance:</span> 200 mm</li>
     <li><span className="font-bold">Suspension:</span> Front - MacPherson Strut with Coil Spring, Rear - Torsion Beam with Coil Spring</li>
