@@ -21,7 +21,7 @@ export default function LuxuryWedding() {
                `Message: ${message}\n\n` +
                `Please contact me for booking confirmation.`;
     
-    const url = `https://wa.me/918327272222?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/9988014945?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
     
     setTimeout(() => setIsSubmitting(false), 1000);
@@ -82,11 +82,11 @@ export default function LuxuryWedding() {
             {/* Vehicle Details */}
             <section className="px-4 sm:px-8 md:px-16 py-10 text-gray-800">
   <h2 className="text-2xl md:text-3xl font-bold mb-2 border-b-4 border-red-600 inline-block">
-    Maruti Grand Vitara Smart Hybrid Alpha Ptl
+    Ford Endeavour
   </h2>
 
   <p className="mt-4 text-base leading-relaxed">
-    Punjab Car Rentals offers a self-drive car that has never been easier! With affordable rates and flexible rental options, you can book the Maruti Grand Vitara Smart Hybrid Alpha Ptl for your next trip to Punjab or nearby cities like Himachal, Ladakh, and Spiti. So why wait? Book now and experience the ultimate comfort and performance of this amazing SUV!
+    Punjab Rent2GO offers a self-drive car that has never been easier! With affordable rates and flexible rental options, you can book the Maruti Grand Vitara Smart Hybrid Alpha Ptl for your next trip to Punjab or nearby cities like Himachal, Ladakh, and Spiti. So why wait? Book now and experience the ultimate comfort and performance of this amazing SUV!
   </p>
 
   <p className="mt-4 text-base leading-relaxed">

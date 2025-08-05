@@ -42,30 +42,32 @@ export default function Home() {
     <main className="bg-white text-[#0e141b] min-h-screen">
   <div className="bg-gradient-to-r from-orange-500 via-rose-500 to-red-500 text-white text-sm px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2 shadow-md">
   {/* Phone */}
-  <div className="flex items-center gap-2">
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M21 16.5V21a1 1 0 0 1-1.25.97A19.8 19.8 0 0 1 3 4.25 1 1 0 0 1 3.97 3h4.5a1 1 0 0 1 1 0.75l1.1 4.4a1 1 0 0 1-.29.96l-2.2 2.2a16 16 0 0 0 6.4 6.4l2.2-2.2a1 1 0 0 1 .96-.29l4.4 1.1a1 1 0 0 1 .75 1z"/>
-    </svg>
-    <span className="font-semibold">+91 83272 72222</span>
-  </div>
-
-  {/* Email */}
-  <div className="flex items-center gap-2">
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.01l-10 6.25L2 4.01V4zm0 2.26V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.26l-10 6.24L2 6.26z"/>
-    </svg>
-    <span className="font-semibold">info@punjabcarrentals.com</span>
-  </div>
+<div className="flex items-center gap-2">
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M21 16.5V21a1 1 0 0 1-1.25.97A19.8 19.8 0 0 1 3 4.25 1 1 0 0 1 3.97 3h4.5a1 1 0 0 1 1 .75l1.1 4.4a1 1 0 0 1-.29.96l-2.2 2.2a16 16 0 0 0 6.4 6.4l2.2-2.2a1 1 0 0 1 .96-.29l4.4 1.1a1 1 0 0 1 .75 1z"/>
+  </svg>
+  <a href="tel:+918195952780" className="font-semibold text-white hover:underline">
+    +91 81959 52780
+  </a>
 </div>
 
-
+{/* Email */}
+<div className="flex items-center gap-2 mt-2">
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v.01l-10 6.25L2 4.01V4zm0 2.26V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.26l-10 6.24L2 6.26z"/>
+  </svg>
+  <a href="mailto:vikasjitsingh2@gmail.com" className="font-semibold text-white hover:underline">
+    vikasjitsingh2@gmail.com
+  </a>
+</div>
+</div>
   
       {/* Header with Mobile Menu */}
       <header className="relative">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex justify-center gap-8 py-4 border-b bg-gradient-to-r from-white to-gray-50">
           <Link href="/" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Home</Link>
-          <Link href="/about" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">About</Link>
+          <Link href="/About" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">About</Link>
           <Link href="/self-drive" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Self-Drive</Link>
           <Link href="/luxury-wedding" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Luxury Wedding</Link>
           <Link href="/taxi" className="font-medium hover:text-transparent hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300 transform hover:scale-105">Taxi Booking</Link>
@@ -76,7 +78,7 @@ export default function Home() {
         <div className="md:hidden flex justify-between items-center px-6 py-4 border-b bg-gradient-to-r from-white to-gray-50">
           <div className="text-lg font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent">
             <div className="text-xl font-extrabold tracking-wide bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 bg-clip-text text-transparent uppercase">
-              Punjab Rental Wheels
+              Rent2GO
             </div>
           </div>
         
@@ -223,11 +225,12 @@ export default function Home() {
     {[
       "/cars/self-drive/car1.png",
       "/cars/taxi/car1.png",
+      "/cars/luxury-wedding/car1.png",
       "/cars/tourist-package/car1.png",
     ].map((src, i) => (
       <div
         key={src}
-        className="relative w-full h-[65vh] sm:h-[70vh] md:h-[80vh]"
+        className="relative w-full h-[40vh] sm:h-[40vh] md:h-[40vh]"
       >
         <Image
           src={src}
@@ -235,6 +238,7 @@ export default function Home() {
           fill
           style={{ objectFit: "cover" }}
           className="w-full h-full object-cover"
+          
           priority={i === 0}
         />
       </div>
@@ -248,7 +252,7 @@ export default function Home() {
         
       </h1>
       <h2 className="text-base sm:text-2xl font-semibold mb-4 drop-shadow-md">
-        CAR RENTALS
+        Rent2GO
       </h2>
       <p className="text-sm sm:text-base mb-6 font-medium drop-shadow">
         Whether it’s a wedding, function, or an occasion, our fleet of luxury cars will be at your service.
@@ -257,7 +261,7 @@ export default function Home() {
        <div className="flex space-x-4 justify-center">
 <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 items-center justify-center">
   <a
-    href="/luxury-wedding"
+    href="/self-drive"
     className="bg-gradient-to-r from-red-500 to-red-600 px-4 py-1 text-sm font-semibold shadow-md hover:from-red-600 hover:to-rose-500 transition straight text-center"
   >
     Hire Car
@@ -377,7 +381,7 @@ export default function Home() {
     
     {/* Logo & About */}
     <div>
-      <h2 className="text-2xl font-bold text-orange-400 mb-2">Punjab Rental Wheels</h2>
+      <h2 className="text-2xl font-bold text-orange-400 mb-2">Rent2GO</h2>
       <p className="text-sm text-gray-300">
         Premium Self-Drive & Luxury Car Rentals in Punjab. 
         Hire with chauffeur or self-drive – flexible, fast, and reliable.
@@ -417,8 +421,8 @@ export default function Home() {
       <h3 className="font-semibold text-lg mb-2 text-white">Contact</h3>
       <ul className="space-y-2 text-sm text-gray-300">
         <li><i className="fas fa-map-marker-alt text-orange-400 mr-2"></i> Ludhiana, Punjab</li>
-        <li><i className="fas fa-envelope text-orange-400 mr-2"></i> info@punjabcarrentals.com</li>
-        <li><i className="fas fa-phone text-orange-400 mr-2"></i> +91 83272 72222</li>
+        <li><i className="fas fa-envelope text-orange-400 mr-2"></i> vikasjitsingh2@gmail.com</li>
+        <li><i className="fas fa-phone text-orange-400 mr-2"></i> +91 99880 14945</li>
       </ul>
     </div>
 
@@ -427,7 +431,7 @@ export default function Home() {
 
   {/* Bottom Bar */}
   <div className="bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 text-white text-sm px-10 py-4 flex flex-col sm:flex-row justify-between items-center gap-2 shadow-md">
-    © {new Date().getFullYear()} Punjab Rental Wheels | All Rights Reserved
+    © {new Date().getFullYear()} Rent2GO | All Rights Reserved
   </div>
 
 

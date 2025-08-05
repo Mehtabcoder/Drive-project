@@ -21,7 +21,7 @@ export default function LuxuryWedding() {
                `Message: ${message}\n\n` +
                `Please contact me for booking confirmation.`;
     
-    const url = `https://wa.me/918327272222?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/9988014945?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
     
     setTimeout(() => setIsSubmitting(false), 1000);
@@ -83,19 +83,19 @@ export default function LuxuryWedding() {
             {/* Vehicle Details */}
            <section className="px-4 sm:px-8 md:px-16 py-10 text-gray-800">
   <h2 className="text-2xl md:text-3xl font-bold mb-2 border-b-4 border-red-600 inline-block">
-    Maruti Grand Vitara Smart Hybrid Alpha Ptl
+    Scorpio
   </h2>
 
   <p className="mt-4 text-base leading-relaxed">
-    Punjab Car Rentals offers a self-drive car that has never been easier! With affordable rates and flexible rental options, you can book the Maruti Grand Vitara Smart Hybrid Alpha Ptl for your next trip to Punjab or nearby cities like Himachal, Ladakh, and Spiti. So why wait? Book now and experience the ultimate comfort and performance of this amazing SUV!
+    Punjab Rent2GO offers a self-drive car that has never been easier! With affordable rates and flexible rental options, you can book the Scorpio for your next trip to Punjab or nearby cities like Himachal, Ladakh, and Spiti. So why wait? Book now and experience the ultimate comfort and performance of this amazing SUV!
   </p>
 
   <p className="mt-4 text-base leading-relaxed">
-    If you're planning a trip and looking for a comfortable and stylish self-drive car, the Maruti Grand Vitara Smart Hybrid Alpha Ptl is a great option. You can rent this car at very reasonable rates from self-drive car rental services in Punjab and nearby cities, offering you a convenient and affordable way to explore your destination.
+    If you're planning a trip and looking for a comfortable and stylish self-drive car, the Scorpio is a great option. You can rent this car at very reasonable rates from self-drive car rental services in Punjab and nearby cities, offering you a convenient and affordable way to explore your destination.
   </p>
 
   <h3 className="text-xl md:text-2xl font-semibold mt-8 mb-4 text-center">
-    Key Specifications of Maruti Grand Vitara Smart Hybrid Alpha AT Ptl
+    Key Specifications of Scorpio
   </h3>
 
   <ul className="text-center text-sm sm:text-base space-y-2 font-medium">
@@ -220,11 +220,11 @@ export default function LuxuryWedding() {
     <div className="space-y-3">
       <div className="flex items-center space-x-3">
         <Phone className="w-5 h-5" />
-        <span>+91 83272 72222</span>
+        <span>+91 99880 14945</span>
       </div>
       <div className="flex items-center space-x-3">
         <Mail className="w-5 h-5" />
-        <span>info@prestigeweddingcars.com</span>
+        <span>vikasjitsingh2@gmail.com</span>
       </div>
       <div className="flex items-center space-x-3">
         <MapPin className="w-5 h-5" />

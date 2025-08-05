@@ -32,7 +32,7 @@ const ContactPage = () => {
       );
 
       // WhatsApp Click to Chat URL (replace with your business WhatsApp number)
-      const whatsappURL = `https://wa.me/11234567890?text=${encodedMessage}`;
+      const whatsappURL = `https://wa.me/9988014945?text=${encodedMessage}`;
 
       // Open WhatsApp with the pre-filled message
       window.open(whatsappURL, '_blank');
